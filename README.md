@@ -1,8 +1,13 @@
 # PREDICTING-STROKE-PROBABILITY-BASED-ON-MEDICAL-HISTORY-AND-HEALTH-PARAMETERS
 Investigate the correlation relationship between the attributes in the dataset and the predictive attribute, and build a predictive model for stroke probability based on the attributes that have a significant correlation relationship.
-- Các thông tin thu thập: Trong nghiên cứu này, chúng tôi sẽ thu thập các thông tin về giới tính, tiền sử bệnh tim mạch, cao huyết áp và môi trường làm việc của các cá nhân. Chúng tôi cũng sẽ ghi nhận liệu họ đã từng trải qua đột quỵ hay chưa.
-- Phương pháp thu thập dữ liệu: chúng tôi sử dụng các tệp dữ liệu được cung cấp trên nền tảng Kaggle – nền tảng hàng đầu về kho dữ liệu và cuộc thi khoa học dữ liệu trực tuyến. và tiến hành phân tích dữ liệu thông qua việc vẽ các biểu đồ sử dụng thư viện Seaborn.
-- Phương pháp cân bằng dữ liệu: trong nghiên cứu này, nhóm sử dụng việc thêm các dữ liệu mục tiêu để cân bằng dữ liệu. Tuy nhiên kết quả đạt được không khả quan nên nhóm đã tăng cường thêm kỹ thuật SMOTE để thực hiện cân bằng dữ liệu. Đây là phương pháp tạo ra các dữ liệu ngẫu nhiên không trùng hoàn toàn với dữ liệu có sẵn từ đó không ảnh hưởng đến kết quả dự đoán.
-- Phương pháp kiểm định dữ liệu: nhóm tác giả sử dụng 2 phương pháp kiểm định dữ liệu là Anova và Chi-square để đánh giá các thuộc tính độc lập, tìm ra mối quan hệ tương quan có ý nghĩa giữa các thuộc tính và thuộc tính dự đoán.
-- Phương pháp đánh giá mô hình: sử dụng ma trận nhầm lẫn để có cái nhìn tổng quan về kết quả dự đoán của mô hình. Tiêu chí đánh giá quyết định của đề tài dựa trên Đường cong ROC (Receiver Operating Characteristic). Đường cong ROC biểu thị sự tương quan giữa tỷ lệ biểu diễn đúng (True Positive Rate) và tỷ lệ biểu diễn sai (False Positive Rate) của mô hình dự đoán trên các ngưỡng khác nhau.
-- Trình tự tiến hành: Phân tích dữ liệu cơ bản từ tệp dữ liệu, thực hiện các đánh giá sơ bộ, cân bằng dữ liệu dự đoán, khảo sát mối quan hệ của các thuộc tính bằng các phương pháp thống kê, chọn các thuộc tính phù hợp để xây dựng mô hình dự đoán, tiến hành huấn luyện tập dữ liệu, kiểm tra kết quả dự đoán và thực hiện đánh giá mô hình.
+- Data Collection: In this study, we will collect information on gender, history of cardiovascular disease, hypertension, and work environment of individuals. We will also record whether they have had a stroke before.
+
+- Data Collection Method: We are using the data files provided on the Kaggle platform - the leading platform for data repositories and online data science competitions. We will conduct data analysis by drawing charts using the Seaborn library.
+
+- Data Balancing Method: In this study, the team used adding target data to balance the data. However, the results were not favorable, so the team has strengthened the SMOTE technique to perform data balancing. This is a method of creating random data that does not completely overlap with the existing data, so it does not affect the prediction results.
+
+- Data Validation Methods: The authors use two data validation methods, ANOVA and Chi-square, to evaluate the independent attributes, find significant correlation relationships between the attributes and the predictive attribute.
+
+- Model Evaluation Methods: Use the confusion matrix to get an overview of the model's prediction results. The decision evaluation criteria of the topic are based on the Receiver Operating Characteristic (ROC) curve. The ROC curve represents the correlation between the True Positive Rate and the False Positive Rate of the predictive model at different thresholds.
+
+- Procedure: Analyze the basic data from the data file, perform preliminary assessments, predict data balancing, investigate the relationship of attributes using statistical methods, select appropriate attributes to build the prediction model, train the data set, check the prediction results and perform model evaluation.
